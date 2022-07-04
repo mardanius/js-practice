@@ -291,13 +291,43 @@ function ask3(a, b) {
     : `${a} es menor que ${b}`;
 }
 
-console.log(ask3(4, 4));
+// Using multiple ternary Operator and Arrow Function
+
+let ask3 = (a, b = 1) => {
+    return (a > b) ? `${a} es mayor que ${b}`
+    : (a == b) ? `${a} es igual a ${b}`
+    : `${a} es menor que ${b}`;
+}
+
+console.log(ask3(4));
 console.log(ask3(5, 4));
 console.log(ask3(4, 40));
 
+// More of arrow functions
 
+const sumar = (a,b) => a + b;
+console.log(sumar(3,3));
 
+// Scope of var and let
 
+let compare1 = () => {
+    let arr = [];
+    for(let i = 0; i < 5; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+console.log(compare1());
 
+// Rest Parameter   
 
+const restPar = (...argumento) => `You have enter ${argumento.length} parameters.`;
+console.log(restPar([0,1,2],"HOLA",true));
 
+// Spread Operator
+
+let arr = [15,3,55,38];
+
+const maximo = Math.max(...arr);
+
+console.log(maximo);
