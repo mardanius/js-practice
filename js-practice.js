@@ -331,3 +331,66 @@ let arr = [15,3,55,38];
 const maximo = Math.max(...arr);
 
 console.log(maximo);
+
+// Destructuring assignments in objects
+
+let person = {
+    name: 'Dani', 
+    age: 31,
+    pet: {
+        petName: "Michi",
+        legs: 4
+    }
+}
+
+let { name: nombre, age: edad } = person;
+let { pet : {petName: nombreMascota, legs: numeroPatas}} = person;
+
+console.log(`${nombreMascota} have ${numeroPatas} legs`);
+console.log(nombre);
+
+// Destructuring assignments in arrays
+
+let p = 1; let h = 20;
+console.log([p,h] = [h,p]);
+console.log(p);
+console.log(h);
+
+let array1 = ["a","b","c","d","e","f","g"];
+[x, y,, z,...resto] = array1;
+console.log(x, y, z);
+console.log(resto);
+
+console.log(array1);
+
+// Destructuring assignment to pass and object as arguments
+
+const personData = {
+    name: "Sol",
+    age: 24,
+    field: "Engineering Student"
+}
+/*1 method
+const updateProfile = (personData) => {
+    const {name, age, field} = personData;
+}*/
+// Second Method using destructuring assignment
+
+const updateProfile = ({ name, age, field }) => {
+    
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
