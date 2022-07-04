@@ -263,10 +263,37 @@ function randomFraction() {
 console.log(randomFraction());
 
 
+// Normal if statement
 
+function ask(a, b) {
+    if (a > b) {
+        return a + " es mayor a " + b;
+    } else {
+        return a + " es menor a " + b;
+    }
+}
 
+console.log(ask(3, 5));
 
+// Using Ternary Operator
 
+function ask2(a, b) {
+    return a > b ? a + " es mayor que " + b : a + " es menor que " + b;
+}
+console.log(ask2(18, 12));
+console.log(ask2(13, 125));
+
+// Using multiple ternary Operator
+
+function ask3(a, b) {
+    return (a > b) ? `${a} es mayor que ${b}`
+    : (a == b) ? `${a} es igual a ${b}`
+    : `${a} es menor que ${b}`;
+}
+
+console.log(ask3(4, 4));
+console.log(ask3(5, 4));
+console.log(ask3(4, 40));
 
 
 
