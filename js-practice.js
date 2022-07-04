@@ -196,12 +196,71 @@ cargar();
 
 console.log(abc);
 
+// For Loops
+
+const ourArray = [];
+
+for (let i = 0; i <= 5; i++) {
+  ourArray.push(i);
+}
+
+console.log(ourArray);
+
+// While loops
+
+let ourArray2 = [];
+let j = 0;
+
+while (j < 5) {
+    ourArray2.push(j);
+    j++;
+}
+
+console.log(ourArray2);
+
+// Iterate through an array
+
+let myArr = [10,9,8,7,6,[5,4,3,2,1]];
+
+for (let i = 0; i < myArr.length - 1; i++) {
+    console.log(myArr[i]);
+
+    if (myArr.length - 1) {
+        for (let j = 0; j < myArr[i].length; j++) {
+            console.log(myArr[i][j]);
+        }
+    }
+}
+
+// Random Fractions
+
+function randomFraction() {
+    let arr = [];
+    let n = 0;
+    do {
+        arr.push(Math.random() * 50); // Generates decima numbers
+        //arr.push(Math.floor(Math.random() * 5));
+        n++;
+    } while (n < 5)
+    return arr;
+}
+
+console.log(randomFraction());
+
+// Random within a range
 
 
+function randomFraction() {
+    let arr = [];
+    let n = 0;
+    do {
+        arr.push(Math.floor(Math.random() * (10 - 5 + 1)) + 5);
+        n++;
+    } while (n < 5)
+    return arr;
+}
 
-
-
-
+console.log(randomFraction());
 
 
 
