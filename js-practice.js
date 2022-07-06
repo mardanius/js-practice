@@ -381,10 +381,35 @@ const updateProfile = ({ name, age, field }) => {
 };
 
 
+// Object Property shorthand
 
+const position = (x, y) => ({x, y});
+console.log(position(5,13));
 
+// Concise declarative functions
+// One way to write a method
 
+const humano1 = {
+    name: 'Wellington',
+    age: 30,
+    saludar: function(){
+        return "Bom dia!"
+    }
+}
 
+console.log(humano.saludar());
+
+// Other way
+
+const humano2 = {
+    name: 'Wellington',
+    age: 30,
+    saludar() {
+        return "Bom dia!"
+    }
+}
+
+console.log(humano2.saludar());
 
 
 
