@@ -1,0 +1,5 @@
+// Testing Import from math.js
+
+import { add } from "./math.mjs";
+
+console.log(add(25,5));

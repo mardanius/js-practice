@@ -411,6 +411,13 @@ const humano2 = {
 
 console.log(humano2.saludar());
 
+// Testing Import from math.js
+
+
+import { add } from "math.js";
+
+console.log(add(25,5));
+
 
 
 
