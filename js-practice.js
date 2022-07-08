@@ -411,16 +411,39 @@ const humano2 = {
 
 console.log(humano2.saludar());
 
-// Testing Import from math.js
+// Array Splice
 
+let myArr1 = [1,2,3,4,5,6,7,8,9];
 
-import { add } from "math.js";
+myArr1.splice(0, 4);
 
-console.log(add(25,5));
+console.log(myArr1);
 
+// ternary operator
+// normal if chain
 
+function comparar(a,b) {
+    if (a > b) {
+        return `${a} es mayor que ${b}`;
+    } else {
+        return `${b} es mayor que ${a}`;
+    }
+}
 
+console.log(comparar(30,5))
 
+// Using ternary operator
+
+function comparar2 (a,b){
+    return a > b ? `${a} es mayor que ${b}` : `${b} es mayor que ${a}`;
+}
+console.log(comparar2(30,5))
+
+// Splice: Delete
+
+let numbers = [0,1,2,3,4,5,666,'fsddf'];
+numbers.splice(6,2,6,7,8,9);
+console.log(numbers);
 
 
 
