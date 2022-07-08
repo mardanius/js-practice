@@ -445,16 +445,18 @@ let numbers = [0,1,2,3,4,5,666,'fsddf'];
 numbers.splice(6,2,6,7,8,9);
 console.log(numbers);
 
-// Slice to extract values from an array and create a new one.
+// Slice and Spread Operator
 
 let temp = ['cool', 'warm', 'sunny', 'windy'];
 
 function summerInCali(temp) {
     let summerInCali = temp.slice(1,3);
-    return summerInCali;
+    let allYearTemp = ['Impredecible',...temp];
+    return `Summer ${summerInCali} All year ${allYearTemp}`;
 }
 
 console.log(summerInCali(temp));
+
 
 
 
