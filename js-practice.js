@@ -481,6 +481,14 @@ for (let team in oficinaMovida){
     console.log(oficinaMovida[team]);
 }
 
+// Object.key
 
+let teamMovidaPy = {
+    Manu: 'Director',
+    Tim: 'Volunteer',
+    Carol: 'Accounting',
+    Welling: 'Volunteer'
+}
 
+console.log(Object.keys(teamMovidaPy));
 
