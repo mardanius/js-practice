@@ -473,5 +473,14 @@ function verify(arr,elem){
 
 console.log(verify(codes,115));
 
+// for...in
+
+let oficinaMovida = ['Manu','Tim','Carol','Welling'];
+
+for (let team in oficinaMovida){
+    console.log(oficinaMovida[team]);
+}
+
+
 
 
