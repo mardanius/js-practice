@@ -446,7 +446,7 @@ numbers.splice(6,2,6,7,8,9);
 console.log(numbers);
 
 // Slice and Spread Operator
-
+    
 let temp = ['cool', 'warm', 'sunny', 'windy'];
 
 function summerInCali(temp) {
@@ -457,7 +457,21 @@ function summerInCali(temp) {
 
 console.log(summerInCali(temp));
 
+// indexOf
 
+let codes = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+function verify(arr,elem){
+    if (codes.indexOf(elem) > 9) {
+        return "El elemento está en la posición 10 para arriba";
+    } else if (codes.indexOf(elem) == -1) {
+        return "El elemento no está en el array";
+    } else {
+        return "El elemento está en la posición 10 para abajo";
+    }
+}
+
+console.log(verify(codes,115));
 
 
 
